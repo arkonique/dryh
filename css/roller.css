@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "horror";
+  src: url('../fonts/horroroid.ttf');
+}
+
+
+body{
+  font-family: 'horror';
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  width: 90%;
+  flex-flow: column;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #053a5f;
+  height: 0.5rem;
+  border-radius: 30px;
+}
+
+input[type="range"]::-moz-range-track {
+  background: #053a5f;
+  border-radius: 30px;
+  height: 0.5rem;
+}
+
+#madness::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Override default look */
+   appearance: none;
+   margin-top: -12px; /* Centers thumb on the track */
+   background-color: red;
+   height: 2rem;
+   width: 2rem;
+   border-radius: 50%;
+   /*box-shadow: 0 0 7px 1px grey;*/
+}
+
+#madness::-moz-range-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -12px; /* Centers thumb on the track */
+  background-color: red;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  /*box-shadow: 0 0 7px 1px grey;*/
+}
+
+#exhaustion::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Override default look */
+   appearance: none;
+   margin-top: -12px; /* Centers thumb on the track */
+   background-color: black;
+   height: 2rem;
+   width: 2rem;
+   border-radius: 50%;
+   /*box-shadow: 0 0 7px 1px grey;*/
+}
+
+#exhaustion::-moz-range-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -12px; /* Centers thumb on the track */
+  background-color: black;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  /*box-shadow: 0 0 7px 1px grey;*/
+}
+
+#discipline::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Override default look */
+   appearance: none;
+   margin-top: -12px; /* Centers thumb on the track */
+   background-color: #4f85ff;
+   height: 2rem;
+   width: 2rem;
+   border-radius: 50%;
+   /*box-shadow: 0 0 7px 1px grey;*/
+}
+
+#discipline::-moz-range-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -12px; /* Centers thumb on the track */
+  background-color: #4f85ff;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  /*box-shadow: 0 0 7px 1px grey;*/
+}
+
+
+form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+h1 {
+  font-size: 5rem;
+  color: red;
+  font-weight: normal;
+}
+
+input {
+  width: 100%
+}
+
+i {
+  margin: 0 5px;
+  color: red;
+}
+
+button {
+height: 70px;
+font-size: 3rem;
+font-family: serif;
+border: none;
+color: #787878;
+cursor:  pointer;
+transition: 0.3s;
+border-radius: 15px;
+font-family: 'horror';
+}
+
+button:hover {
+  color: white;
+  background: red;
+}
+
+#results {
+  font-size: 8rem;
+  margin: 0;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#ex > i {
+  color: black;
+}
+
+#ma > i {
+  color: red;
+}
+
+#di > i {
+  color: #4f85ff;
+}
+
+
+#exhaustion-p > i{
+  color: black;
+}
+
+#curr-ex > i{
+  color: black;
+}
+
+#madness-p > i{
+  color: red;
+}
+
+#curr-ma > i{
+  color: red;
+}
+
+#discipline-p > i{
+  color: #4f85ff;
+}
+
+#curr-di > i{
+  color: #4f85ff;
+}

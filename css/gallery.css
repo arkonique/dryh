@@ -1,0 +1,106 @@
+body {
+  margin: 10px
+}
+
+.gallery{
+display: flex;
+flex-flow: wrap;
+align-items: center;
+justify-content: center;
+}
+
+.images{
+width: 15vw;
+height: 15vw;
+display: flex;
+margin: 10px;
+}
+
+input{
+  display: none
+}
+
+
+.g-img-wrapper {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  box-sizing: content-box;
+  /* border: 8px solid #03a9f4; */
+  transition: 0.2s;
+}
+
+img {
+  width: 100%;
+  border-radius: 3px;
+  transition: 0.2s
+}
+
+input[type='radio']:checked ~ span.g-img-wrapper {
+  border: 8px solid #03a9f4;
+}
+
+.showbtn{
+  margin: 10px;
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  font-size: 2rem;
+  background: #2196f3;
+  padding: 20px;
+  line-height: initial;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+input[type='checkbox']:checked ~ span.showbtn {
+  animation: ripple 3s linear infinite;
+}
+
+
+
+.showbtn::before,
+.showbtn::after {
+  content: "";
+  grid-area: 1/1;
+  border-radius: 50%;
+  animation: inherit;
+  animation-delay: 1s;
+}
+
+.showbtn::after {
+  animation-delay: 2s;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 .7rem rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 8rem rgba(255, 255, 255, 0);
+  }
+}
+
+
+#statecheck{
+  margin: 10px;
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  font-size: 2rem;
+  /* background: #2196f3; */
+  padding: 20px;
+  line-height: initial;
+  border-radius: 10px;
+  color: #39ff39;
+  cursor: pointer;
+  font-weight: lighter;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+input[type='checkbox']:checked ~ p#statecheck {
+  left: 145px;
+  opacity: 1;
+}

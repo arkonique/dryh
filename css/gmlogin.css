@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+height:  100vh;
+color:  red;
+font-weight: bolder;
+background: url('../img/maxresdefault.jpg'),black;
+background-size: cover;
+}
+
+form{
+  position: absolute;
+  top: 25%;
+  font-family: 'Cinzel';
+  font-weight: 500;
+  font-size: 1.5rem;
+  background: #00000073;
+  width: 50vh;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 50px 20px #70707066;
+  border-radius: 30px;
+  opacity: 0.7;
+}
+
+label {
+margin: 30px;
+width: 15%;
+padding: 15px;
+float: left;
+}
+
+input {
+font-family: 'Cinzel';
+color: white;
+margin: 8%;
+width: 30%;
+padding: 4%;
+float: right;
+background: none;
+border: none;
+border-bottom: 3px solid white;
+outline:  none;
+transition: 0.2s
+}
+
+input:hover {
+border-bottom: 5px solid white;
+}
+
+input:focus {border-bottom: 5px solid white;background: #ffffff1f;}
+
+
+button{
+font-family: 'Cinzel';
+width: 100%;
+/* height: 60px; */
+padding: 5%;
+border-radius: 0 0 30px 30px;
+font-size: 2rem;
+color: white;
+cursor: pointer;
+background: red;
+transition: 0.2s
+}
+
+button:hover{
+  background: #a70000;
+}
